@@ -21,6 +21,7 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
+    @Transient
     private int age;
 
 

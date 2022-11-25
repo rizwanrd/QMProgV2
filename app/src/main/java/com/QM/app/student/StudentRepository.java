@@ -1,11 +1,13 @@
 package com.QM.app.student;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface StudentRepository
-        extends JpaRepository<Student, Long> {
+import java.util.List;
 
+@Repository
+public interface StudentRepository extends CrudRepository<StudentH2DB, Long> {
+
+    List<StudentH2DB> findAll();
 
 }

@@ -1,7 +1,7 @@
 package com.QM.app.Tess;
 
-public class TessService {
+public interface TessService {
 
-
+    String getTextFromScanner();
 
 }
